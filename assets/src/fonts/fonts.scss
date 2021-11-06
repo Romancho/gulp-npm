@@ -1,0 +1,16 @@
+@import "./try-fonts";
+
+$font-default: 'Montserrat', sans-serif; // Обычный текст / Статьи / Списки (Вместо платного Proxima Nova)
+$font-ui : 'Montserrat'; // Менюшки (Вместо платного Muller)
+$font-title: 'Montserrat', sans-serif; // Различные заголовки
+
+@mixin font-default($sizeValue: $default-font-size, $line: $default-font-height, $font-weight: $default-font-weight) {
+  font: $font-weight #{$sizeValue}/#{$line} $font-default;
+}
+
+@mixin font-title($sizeValue: $default-title-size, $line: $default-title-height, $font-weight: $default-title-weight) {
+  font: $font-weight #{$sizeValue}/#{$line} $font-title;
+}
+@mixin font-ui($sizeValue: $default-title-size, $line: $default-title-height, $font-weight: $default-title-weight) {
+  font: $font-weight #{$sizeValue}/#{$line} $font-ui;
+}

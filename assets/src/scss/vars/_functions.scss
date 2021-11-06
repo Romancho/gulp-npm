@@ -1,0 +1,32 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function get-rem($screen-width, $target) {
+  //$vw-context: ($screen-width * 0.01) * 1px;
+  @return ($target / $screen-width) * 1rem;
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{strip-unit($pixels)/$context}rem;
+}
+
+
+$timing: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+@each $time in $timing {
+  .delay-#{$time} {
+    animation-delay: #{$time}#{0}0ms !important;
+  }
+}
+$width: (90, 80, 70, 60, 50, 40);
+@each $w in $width {
+  .width-#{$w} {
+    width: #{$w * 1%} !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

@@ -1,0 +1,212 @@
+@import "animate-library";
+.bounceInUp {
+  @include bounceInUp(
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+
+.bounceOutDown {
+  @include bounceOutDown (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+.zoomIn {
+  @include zoomIn (
+    $duration: .6s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+.fadeIn {
+  @include fadeIn (
+    $duration: .6s,
+    $count: 1,
+    $delay: .3s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInUp {
+  @include slideInUp (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInUp-delay600 {
+  @include slideInUp (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .6s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInUp-delay1200 {
+  @include slideInUp (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: 1.2s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInLeft {
+  @include slideInLeft (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInLeft-delay300 {
+  @include slideInLeft (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .3s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInLeft-delay600 {
+  @include slideInLeft (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .6s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInLeft-delay1200 {
+  @include slideInLeft (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: 1.2s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInRight {
+  @include slideInRight (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInRight-delay300 {
+  @include slideInRight (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .3s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInRight-delay600 {
+  @include slideInRight (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .6s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInRight-delay1200 {
+  @include slideInRight (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: 1.2s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInDown {
+  @include slideInDown (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .1s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInDown-delay600 {
+@include slideInDown (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: .6s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInDown-delay1200 {
+  @include slideInDown (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: 1.2s,
+    $function: ease,
+    $fill: both
+  );
+}
+.slideInDown-delay1200 {
+  @include slideInDown (
+    $duration: 1.5s,
+    $count: 1,
+    $delay: 1.2s,
+    $function: ease,
+    $fill: both
+  );
+}
+.fly-rt {
+  animation: fly-rt 2s forwards;
+}
+.fly-lb {
+  animation: fly-lb 2s forwards;
+}
+.zoomInLight {
+  animation: zoomInLight 2s forwards;
+}
+.fly-center-b {
+  animation: fly-center-b 1.5s forwards;
+}
+.slideLinesBannersLeft {
+  animation: slideLinesBannersLeft 1.5s forwards;
+}
+
+.slideLinesBannersLeft2 {
+  animation: slideLinesBannersLeft 1.5s 1.5s forwards;
+}
+
+.slideLinesBannersLeft3 {
+  animation: slideLinesBannersLeft3 1.5s 2s forwards;
+}
+
+.slideLinesBannersTop {
+  animation: slideLinesBannersLeft 1.5s forwards;
+}
+.slideLinesBannersBottom {
+  animation: slideLinesBannersBottom 1.5s forwards;
+}
+.slideLeft {
+  animation: slideLeft 1.5s forwards;
+}
+.slideRight {
+  animation: slideRight 1.5s forwards;
+}
+.slideInUp {
+  animation: slideInUp 1s forwards;
+}

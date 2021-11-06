@@ -1,0 +1,50 @@
+.ru-RU {
+  .perspektive {
+    .description {
+      &.collapsed {
+        &::after {
+          content: 'Подробнее...';
+        }
+        &.active {
+          &::after {
+            content: 'Свернуть...';
+          }
+        }
+      }
+    }
+  }
+  .lg-toolbar {
+    #lg-counter {
+      &-current {
+        &::before {
+          content:'Фото ';
+        }
+      }
+    }
+  }
+}
+.en-EN {
+  .perspektive {
+    .description {
+      &.collapsed {
+        &::after {
+          content: 'More detail...';
+        }
+        &.active {
+          &::after {
+            content: 'Hide...';
+          }
+        }
+      }
+    }
+  }
+  .lg-toolbar {
+    #lg-counter {
+      &-current {
+        &::before {
+          content:'Photos ';
+        }
+      }
+    }
+  }
+}

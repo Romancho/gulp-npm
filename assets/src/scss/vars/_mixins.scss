@@ -1,0 +1,28 @@
+@keyframes move-light {
+  from {
+    transform:translateX(-4em) skewX(-45deg)
+  }
+  to {
+    transform:translateX(25em) skewX(-45deg)
+  }
+}
+@mixin animate($speed) {
+  transition: all $speed linear;
+}
+
+@mixin sizes($width, $height: $width) {
+  width: $width;
+  @if type-of($height) == number {
+    height: $height;
+  } @else {
+    height: $width;
+  }
+  flex: 0 0 $width;
+}
+
+$width: (10,20,30,40,50,60,70,80,90,100);
+@each $w in $width {
+  .w-#{$w} {
+    width: #{$w + '%'}!important;
+  }
+}

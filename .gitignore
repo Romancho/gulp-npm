@@ -1,0 +1,7 @@
+.idea/
+vendor
+build
+/assets/src/node_modules
+.env
+*.mp3
+*.mp4

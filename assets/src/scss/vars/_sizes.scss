@@ -1,0 +1,236 @@
+
+// https://github.com/infinum/media-blender
+$media-breakpoints: (
+        extra: 2161,
+        large: 1921 2560,
+        desktop: 1281 1920,
+        ipad: 1024 1280,
+        tablet: 768 1023,
+        mobile: 0 767
+);
+// DEFAULTS
+$breakpoints-width: (
+        xl: 3839,
+        lg: 2559,
+        md: 1280,
+        sm: 1023,
+        xs: 767
+);
+$container-max-widths: (
+        xxl: $viewport-retina,
+        xl: $viewport-extra,
+        lg: $viewport-desktop,
+        md: $viewport-ipad,
+        sm: $viewport-tablet,
+        xs: $viewport-mobile
+);
+//$xxl-vw: $viewport-retina;
+//$xl-vw: $viewport-extra;
+//$lg-vw: $viewport-desktop;
+//$md-vw: $viewport-ipad;
+//$sm-vw: $viewport-tablet;
+//$xs-vw: 320;
+$browser-context: 20; // Default
+
+$xxl-vw: 20px;
+$xxl-fonts: 20;
+$xl-vw: 20px;
+$xl-fonts: 20;
+$lg-vw: 20px;
+$lg-fonts: 20;
+$md-vw: 20px;
+$md-fonts: 20;
+$sm-vw: 20px;
+$sm-fonts: 20;
+$xs-vw: 16px;
+$xs-fonts: 16;
+
+// GUTTINGS
+$xxl-gutter: 1.5rem;
+$xxl-padding: 1.5rem;
+
+$xl-gutter: 1.5rem;
+$xl-padding: 1.5rem;
+
+$lg-gutter: 1.5rem;
+$lg-padding: 1.5rem;
+
+$md-gutter: 1.5rem;
+$md-padding: 1.5rem;
+
+$sm-gutter: 1.5rem;
+$sm-padding: 1.5rem;
+
+$xs-gutter: 8vw;
+$xs-padding: 8vw;
+
+$text-padding: 20px;
+$announce-gutter: 40px;
+
+// Grids
+$extra-container-width: 1440px;
+$large-container-width: 1440px;
+$container-width: 1280px; // DESKTOP
+$ipad-container-width: inherit; // IPAD
+$tablet-container-width: inherit; // TABLET
+$mobile-container-width: inherit; // MOBILE
+
+$sidebar-width: 330px;
+$ipad-sidebar-width: 330px;
+$tablet-sidebar-width: 330px;
+$mobile-sidebar-width: 330px;
+
+// Page wrapper
+$page-wrapper: calc(100% - #{$sidebar-width});
+$ipad-page-wrapper: calc(100% - #{$ipad-sidebar-width});
+$tablet-page-wrapper: 100%;
+$mobile-page-wrapper: 100%;
+
+
+
+$staticHeader: get-rem($lg-vw, 140px);
+$staticHeader__ipad: get-rem($md-vw, 120px);
+$staticHeader__tablet: get-rem($sm-vw, 120px);
+$staticHeader__mobile: get-rem($xs-vw, 60px);
+
+
+// Main teaser
+$second-teaser-gutter: -192px;
+$bottom-expand: 332px;
+$bottom-expand__mobile: 40px;
+
+$default-radius: 0;
+$small-radius: 4px;
+
+// Props
+$ex-layer-height: 70px;
+$section-bottom-gutter: 120px;
+
+// Gallery
+$galleryHeader: 102px;
+$galleryHeader__ipad: 102px;
+$galleryHeader__tablet: 102px;
+$galleryHeader__mobile: 80px;
+
+$form-body-height: 100vh;
+
+
+// Font sizes
+// Заголовки H1
+$h1-title-font__extra:        get-rem($xxl-vw, 52px);
+$h1-title-font__large:        get-rem($xl-vw, 48px);
+$h1-title-font:               get-rem($lg-vw, 48px);
+$h1-title-font__ipad:         get-rem($md-vw, 40px);
+$h1-title-font__tablet:       get-rem($sm-vw, 32px);
+$h1-title-font__mobile:       get-rem($xs-vw, 28px);
+
+$h1-title-height__extra:      1.08;
+$h1-title-height__large:      1.08;
+$h1-title-height:             1.08;
+$h1-title-height__ipad:       1.08;
+$h1-title-height__tablet:     1.08;
+$h1-title-height__mobile:     1.08;
+
+// Заголовки H2
+$h2-title-font__extra:        get-rem($xxl-vw, 48px);
+$h2-title-font__large:        get-rem($xl-vw, 40px);
+$h2-title-font:               get-rem($lg-vw, 40px);
+$h2-title-font__ipad:         get-rem($md-vw, 28px);
+$h2-title-font__tablet:       get-rem($sm-vw, 28px);
+$h2-title-font__mobile:       get-rem($xs-vw, 20px);
+
+$h2-title-height__extra:      1.08;
+$h2-title-height__large:      1.08;
+$h2-title-height:             1.08;
+$h2-title-height__ipad:       1.08;
+$h2-title-height__tablet:     1.08;
+$h2-title-height__mobile:     1.08;
+
+// Заголовки H3
+$h3-title-font__extra:        get-rem($xxl-vw, 32px);
+$h3-title-font__large:        get-rem($xl-vw, 30px);
+$h3-title-font:               get-rem($lg-vw, 28px);
+$h3-title-font__ipad:         get-rem($md-vw, 24px);
+$h3-title-font__tablet:       get-rem($sm-vw, 20px);
+$h3-title-font__mobile:       get-rem($xs-vw, 18px);
+
+$h3-title-height__extra:      1.14;
+$h3-title-height__large:      1.14;
+$h3-title-height:             1.14;
+$h3-title-height__ipad:       1.14;
+$h3-title-height__tablet:     1.14;
+$h3-title-height__mobile:     1.14;
+
+// Заголовки H4
+$h4-title-font__extra:        get-rem($lg-vw, 28px);
+$h4-title-font__large:        get-rem($lg-vw, 24px);
+$h4-title-font:               get-rem($lg-vw, 20px);
+$h4-title-font__ipad:         get-rem($lg-vw, 18px);
+$h4-title-font__tablet:       get-rem($lg-vw, 14px);
+$h4-title-font__mobile:       get-rem($lg-vw, 14px);
+
+$h4-title-height__extra:      38px;
+$h4-title-height__large:      38px;
+$h4-title-height:             38px;
+$h4-title-height__ipad:       38px;
+$h4-title-height__tablet:     38px;
+$h4-title-height__mobile:     38px;
+
+// Заголовки H5
+$h5-title-font__extra:        38px;
+$h5-title-font__large:        38px;
+$h5-title-font:               38px;
+$h5-title-font__ipad:         38px;
+$h5-title-font__tablet:       38px;
+$h5-title-font__mobile:       38px;
+
+$h5-title-height__extra:      38px;
+$h5-title-height__large:      38px;
+$h5-title-height:             38px;
+$h5-title-height__ipad:       38px;
+$h5-title-height__tablet:     38px;
+$h5-title-height__mobile:     38px;
+
+// Заголовки H6
+$h6-title-font__extra:        38px;
+$h6-title-font__large:        38px;
+$h6-title-font:               38px;
+$h6-title-font__ipad:         38px;
+$h6-title-font__tablet:       38px;
+$h6-title-font__mobile:       38px;
+
+$h6-title-height__extra:      38px;
+$h6-title-height__large:      38px;
+$h6-title-height:             38px;
+$h6-title-height__ipad:       38px;
+$h6-title-height__tablet:     38px;
+$h6-title-height__mobile:     38px;
+
+// Font sizes
+$default-font-size__extra: get-rem($xxl-vw, 20px);
+$default-font-height__extra: 1.4;
+$default-font-weight__extra: 500;
+
+$default-font-size__large: get-rem($xl-vw, 20px);
+$default-font-height__large: 1.4;
+$default-font-weight__large: 500;
+
+$default-font-size: get-rem($lg-vw, 20px);
+$default-font-height: 1.4;
+$default-font-weight: 500;
+
+$default-font-size__ipad: get-rem($md-vw, 20px);
+$default-font-height__ipad: 1.4;
+$default-font-weight__ipad: 500;
+
+$default-font-size__tablet:  get-rem($sm-vw, 20px);
+$default-font-height__tablet: 1.4;
+$default-font-weight__tablet: 500;
+
+$default-font-size__mobile:  get-rem($xs-vw, 16px);
+$default-font-height__mobile: 1.4;
+$default-font-weight__mobile: 500;
+
+$default-title-size: 1.146vw;
+$default-title-height: 1.1;
+$default-title-weight: 400;
